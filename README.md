@@ -17,3 +17,4 @@
 - Durable
 - Simple
 - Accessable
+- GPIO Access available with cover to make it water proof
