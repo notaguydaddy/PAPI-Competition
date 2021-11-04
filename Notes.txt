@@ -1,0 +1,4 @@
+- Plug and play
+- Basic ring network
+- Bluetooth (Secondary, Primary for update share)
+- LCD Monitor
