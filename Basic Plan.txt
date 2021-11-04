@@ -1,0 +1,31 @@
+Language: Python?
+
+Raspberry Pi:
+- Pi 4B
+
+Bluetooth usage:
+- Sharing creations (Secondary)
+- Updates
+
+USB usage:
+- Sharing creations (Primary)
+
+Screen:
+- LCD Display (GPIO)
+
+Power:
+- Solar panel
+- Solar power management module
+
+Design (I don't know why I made this):
+
+   Pi 1           Pi 2
+|--------|     |--------|
+| |----| |     | |----| |
+| |////| | USB | |////| |
+| |----| <=====> |----| |
+|--------|     |--------|
+
+
+Current Points of Interest:
+- Bluetooth connectivity
