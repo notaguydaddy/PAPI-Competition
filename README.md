@@ -5,7 +5,7 @@
 ### Idea: Affordable education device
 
 - Solar powered
-- Third world education
+- Education
 - Cheap
 - Portable
 - Small
