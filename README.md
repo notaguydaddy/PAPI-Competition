@@ -2,7 +2,7 @@
 
 ---
 
-### Idea: Third world education device
+### Idea: Affordable education device
 
 - Solar powered
 - Third world education
