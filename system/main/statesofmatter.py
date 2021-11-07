@@ -11,7 +11,7 @@ diagramcanvas = Canvas(window, width = 500, height = 400)
 diagramcanvas.pack()
 
 # Creates a rectangle
-diagramcanvas.create_rectangle(100, 25, 400, 225, outline="#FFFFFF", fill="#FFFFFF")
+diagramcanvas.create_rectangle(100, 25, 400, 225, outline="#ffffff", fill="#ffffff")
 
 def create_circle(x, y, r, diagramcanvas):
     x0 = x - r # retreives the x value of the top left hand corner
