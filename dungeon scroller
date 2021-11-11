@@ -1,0 +1,128 @@
+print("welcome to dungeon scroller")
+print("if the text does not progress pay any key")
+print("what is your gender?")
+gender = input()
+print(gender + " has been chosen")
+print("you find yourself awake on a grass bed flowers around you.")
+print("you struggle to remember your name, what is your name?")
+name = input()
+print( "hello  " + name )
+print("you find yourself ina small tavern ")
+print("")
+print("barkeep: oy you so you want trouble or are ye ere to buy somethin")
+print("would you like to a: say yes ill buy a drinnk b: check your wallet or c: run")
+if input() == "a":
+    print("you: uhm ill buy a drink")
+    print("barkeep: you aint got no money get out")
+    print("you leave the tavern and enter the open world")
+    print("you walk down to the near town of bescheiden and come to the town square. A congregation of bounty hunters are signing new recrutes do you wish to join?")
+if input() == "b":
+    print("you have no money and decide to exit the tavern")
+    print("you walk down to the near town of bescheiden and come to the town square. A congregation of bounty hunters are signing new recrutes do you wish to join?")
+if input() == "c":
+    print("you walk down to the near town of bescheiden and come to the town square. A congregation of bounty hunters are signing new recrutes do you wish to join?")
+if input() == "yes":
+    print("you sign up for the league of assasins and will begin tommorow")
+if input() == "no":
+    print("you try to walk away but an large assasin catches you and forces you to sign up")
+
+print("would you like to sleep tonight?")
+if input() == "yes":
+    print("you get a good night of sleep and gain energy +5 energy (energy is the resouce used to attack)")
+    energy = "15"
+if input() == "no":
+    print("you are tired and do not get sleep -3 energy (energy is the resouce used to attack)")
+    energy = "7"
+
+print("you begin your epic tale of dangerous feats. you shall choose a class ")
+print("do you want to be a mage(ranged dps and healing + 1 damage and 1 healing)")
+print("do you want to be a assasin(fast high dps 5 speed and 5 damage)")
+print("do you want to be a tank(decent dps high health 10 health and 2 damage)")
+if input() == "tank":
+    print("tank has been chosen congrats")
+    health = "20"
+    money = "0"
+    damage = "7" 
+    magic = "0"
+    speed = "3"
+if input() == "assasin":
+    print("assasin has been chosen congrats")
+    health = "10"
+    money = "0"
+    damage = "10" 
+    magic = "0"
+    speed = "10"
+if input() == "mage":
+    print("mage has been chosen congrats")
+    health = "15"
+    money = "0"
+    damage = "6" 
+    magic = "10"
+print(" congrats here are your stats (these affect how the battle goes)")
+print( "you deal "+ damage + " damage")
+print("you have " + money + " pounds")
+print("you have " + health + " health")
+print("you are " + magic + " magic")
+print("you have " + energy + " energy")
+print("congrats it is time for your first hunt:")
+print("you shall go on your first mision")
+print("you will fight a level 2 slime (5 hp) +12 exp or a level 1 noob (3 hp) +6 exp (exp is used to level up and increase stats you get 1 point every level) enter either slime or noob")
+if input() == "slime":
+    print("you attack the slime")
+    print("slimes stats are 7 damage 10 health 0 magic and 3 money")
+    print("would you like to a)run b)attack c)check stats (if your stats are lower than slimes you will loose hp)")
+    if input() == "a":
+        print("you try to run but fail - five health")
+        health = health - "5"
+        if health == "0":
+            print("you died restart script to begin again")
+    if input() == "b":
+        print("you lunge and attack the slime")
+        if damage >= "5":
+            print("you have vanquished the slime +12xp (level up)")
+            exp = "2"
+            level = "1"
+            skillpoints = "1"
+            money = "3"
+            print("would you like to put stats in damage health or magic")
+            if input() == "damage":
+                damage = damage + "1"
+            if input() == "magic":
+                magic = magic + "1"
+            if input() == "health":
+                health = health + "1"
+        if damage <= "5":
+            print("you failed minus 5 hp")
+            health = health - "5"
+        if health == "0":
+            print("you died restart script to begin again")
+    if input() == "c":
+        print( "you deal "+ damage + " damage")
+        print("you have " + money + " pounds")
+        print("you have " + health + " health")
+        print("you are " + magic + " magic")
+        print("you have " + energy + " energy")
+if input() == "noob":
+    print("you attack the noob")
+    print("noob stats are 2 damage 4 health 0 magic and 1 money")
+    print("would you like to a)run b)attack c)check stats (if your stats are lower than noob you will loose hp)")
+    if input() == "a":
+        print("you try to run but fail - five health")
+        health = health - "5"
+    if health == "0":
+            print("you died restart script to begin again")
+    if input() == "b":
+        print("you lunge and attack the noob")
+    if damage >= "5":
+        print("you have vanquished the noob +6xp (level up)")
+        exp = "2"
+        level = "1"
+        skillpoints = "1"
+        money = "3"
+        print("would you like to put stats in damage health or magic")
+    if input() == "damage":
+        damage = damage + "1"
+    if input() == "magic":
+        magic = magic + "1"
+    if input() == "health":
+        health = health + "1"
